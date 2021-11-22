@@ -48,9 +48,6 @@ class FilmFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initUI()
         initObserver()
-        binding.progressBar.showProgress()
-
-        mainViewModel.getMovies(10, 1)
 
         val scheduler: ScheduledExecutorService = Executors.newSingleThreadScheduledExecutor()
         scheduler.scheduleAtFixedRate({
@@ -58,7 +55,7 @@ class FilmFragment : Fragment() {
             // random limit between 1 and 20. random page between 1 and 5
             binding.progressBar.showProgress()
             mainViewModel.getMovies((1..20).random(), (1..5).random())
-        }, 0, 1, TimeUnit.DAYS)
+        }, 0, 24, TimeUnit.HOURS)
     }
 
     private fun initUI() {
@@ -84,7 +81,7 @@ class FilmFragment : Fragment() {
                 notifyDataSetChanged()
             }
         }
-
+○
         mainViewModel.error.observe(this) { err ->
             binding.progressBar.hideProgress()
             Timber.e("MainActivity:: initObserver:: $err")
