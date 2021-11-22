@@ -1,5 +1,5 @@
 # HamroChalachitra
-Movie app for android.
+Movie app for android from https://yts.mx/api api.
 
 ## Technologies
 1. MVVM
