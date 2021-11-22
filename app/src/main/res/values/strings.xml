@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hamro Chalachitra</string>
+    <string name="_err_movies">Failed to get movies.</string>
+    <string name="desc_movie_image">Movie Image</string>
+    <string name="title_movie">Avengers</string>
+    <string name="date_movie_release">Nov 19, 2021</string>
+    <string name="rating_movie">8.9</string>
+    <string name="movie_type">Action</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
